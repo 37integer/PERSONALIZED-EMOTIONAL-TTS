@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频演示页面</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        h1, h2 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f8f8f8; }
+        audio { width: 100%; }
+    </style>
+</head>
+<body>
+
+    <h1>我的音频合成演示</h1>
+    <p>这个页面包含了我最近项目生成的音频样本，请试听并比较效果。</p>
+
+    <h2>实验结果</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>描述</th>
+                <th>音频播放器</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>基线模型 (Baseline - Happy)</td>
+                <td>
+                    <audio controls src="./emotion_demo/baseline.wav"></audio>
+                </td>
+            </tr>
+
+            <tr>
+                <td>我的模型 (Proposed - Happy)</td>
+                <td>
+                    <audio controls src="./emotion_demo/baseline.wav"></audio>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>真实录音 (Ground Truth - Happy)</td>
+                <td>
+                    <audio controls src="./emotion_demo/baseline.wav"></audio>
+                </td>
+            </tr>
+
+            </tbody>
+    </table>
+
+</body>
+</html>
