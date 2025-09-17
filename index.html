@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Demo Page</title>
     <style>
         body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        h1, h2 { color: #333; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        h1, h2 { color: #333; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #555; margin-top: 30px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: #f8f8f8; }
         audio { width: 100%; }
@@ -16,11 +17,13 @@
 <body>
 
     <h1>Adaptive Personalized Emotional TTS through Human-in-the-Loop Learning of Individual Emotion Perception Spaces</h1>
-    <h2>Wangzixi Zhou, Bagus Tris Atmaja,  Sakriani Sakti</h2>
+    <h2>Wangzixi Zhou, Bagus Tris Atmaja, Sakriani Sakti</h2>
     <h3>Nara Institute of Science and Technology, Japan</h3>
-    <p>This is demo page for Adaptive Personalized Emotional TTS through Human-in-the-Loop Learning of Individual Emotion Perception Spaces.</p>
+    <p>This is the demo page for "Adaptive Personalized Emotional TTS through Human-in-the-Loop Learning of Individual Emotion Perception Spaces".</p>
 
     <h2>Speech Quality and Emotional Similarity</h2>
+    
+    <h3>Confused</h3>
     <table>
         <thead>
             <tr>
@@ -30,19 +33,19 @@
         </thead>
         <tbody>
             <tr>
-                <td>Grad-TTS w/emo emb (Baseline) - confused</td>
+                <td>Grad-TTS w/emo emb (Baseline)</td>
                 <td>
                     <audio controls src="./emotion_demo/baseline.wav"></audio>
                 </td>
             </tr>
             <tr>
-                <td>Grad-TTS w/emo ctrl (Proposed) - confused</td>
+                <td>Grad-TTS w/emo ctrl (Proposed)</td>
                 <td>
                     <audio controls src="./emotion_demo/propose.wav"></audio>
                 </td>
             </tr>
             <tr>
-                <td>Ground Truth - confused</td>
+                <td>Ground Truth</td>
                 <td>
                     <audio controls src="./emotion_demo/gt.wav"></audio>
                 </td>
@@ -51,6 +54,8 @@
     </table>
 
     <h2>Personalized</h2>
+
+    <h3>Angry</h3>
     <table>
         <thead>
             <tr>
@@ -60,36 +65,61 @@
         </thead>
         <tbody>
             <tr>
-                <td>Averaged U.S.-based reference dataset A–V values - angry</td>
+                <td>Averaged U.S.-based reference dataset A–V values</td>
                 <td>
                     <audio controls src="./emotion_demo/average.wav"></audio>
                 </td>
             </tr>
             <tr>
-                <td>Personalized A–V values(a chinese girl) - angry</td>
+                <td>Personalized A–V values (a chinese girl)</td>
                 <td>
                     <audio controls src="./emotion_demo/zhang.wav"></audio>
                 </td>
+            </tr>
+        </tbody>
+    </table>
 
+    <h3>Sad</h3>
+    <table>
+        <thead>
             <tr>
-                <td>Averaged U.S.-based reference dataset A–V values - sad</td>
+                <th>Description</th>
+                <th>Audio Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Averaged U.S.-based reference dataset A–V values</td>
                 <td>
                     <audio controls src="./emotion_demo/average_sad.wav"></audio>
                 </td>
             </tr>
             <tr>
-                <td>Personalized A–V values(a indonesia boy) - sad</td>
+                <td>Personalized A–V values (a indonesia boy)</td>
                 <td>
                     <audio controls src="./emotion_demo/jan.wav"></audio>
                 </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Neutral</h3>
+    <table>
+        <thead>
             <tr>
-                <td>Averaged U.S.-based reference dataset A–V values - neutral</td>
+                <th>Description</th>
+                <th>Audio Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Averaged U.S.-based reference dataset A–V values</td>
                 <td>
                     <audio controls src="./emotion_demo/average_neutral.wav"></audio>
                 </td>
             </tr>
             <tr>
-                <td>Personalized A–V values(a japan boy) - neutral</td>
+                <td>Personalized A–V values (a japan boy)</td>
                 <td>
                     <audio controls src="./emotion_demo/oda.wav"></audio>
                 </td>
@@ -98,6 +128,8 @@
     </table>
 
     <h2>Cross-Cultural</h2>
+
+    <h3>Happy</h3>
     <table>
         <thead>
             <tr>
@@ -107,19 +139,19 @@
         </thead>
         <tbody>
             <tr>
-                <td>Indonesia - happy</td>
+                <td>Indonesia</td>
                 <td>
                     <audio controls src="./emotion_demo/indonesia.wav"></audio>
                 </td>
             </tr>
             <tr>
-                <td>Japan - happy</td>
+                <td>Japan</td>
                 <td>
                     <audio controls src="./emotion_demo/japan.wav"></audio>
                 </td>
             </tr>
             <tr>
-                <td>China - happy</td>
+                <td>China</td>
                 <td>
                     <audio controls src="./emotion_demo/china.wav"></audio>
                 </td>
