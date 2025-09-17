@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>音频演示页面</title>
+    <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+    <title>Audio Demo Page</title>
     <style>
         body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        h1, h2 { color: #333; }
+        h1, h2 { color: #333; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: #f8f8f8; }
@@ -15,41 +15,91 @@
 </head>
 <body>
 
-    <h1>我的音频合成演示</h1>
-    <p>这个页面包含了我最近项目生成的音频样本，请试听并比较效果。</p>
+    <h1>Audio Samples Demo</h1>
+    <p>This page contains various audio samples for evaluation. Please listen to the samples in each section.</p>
 
-    <h2>实验结果</h2>
-    
+    <h2>Speech Quality and Emotional Similarity</h2>
     <table>
         <thead>
             <tr>
-                <th>描述</th>
-                <th>音频播放器</th>
+                <th>Description</th>
+                <th>Audio Player</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>基线模型 (Baseline - Happy)</td>
+                <td>Grad-TTS w/emo emb (Baseline) - confused</td>
                 <td>
                     <audio controls src="./emotion_demo/baseline.wav"></audio>
                 </td>
             </tr>
-
             <tr>
-                <td>我的模型 (Proposed - Happy)</td>
+                <td>Grad-TTS w/emo ctrl (Proposed) - confused</td>
                 <td>
-                    <audio controls src="./emotion_demo/baseline.wav"></audio>
+                    <audio controls src="./emotion_demo/propose.wav"></audio>
                 </td>
             </tr>
-            
             <tr>
-                <td>真实录音 (Ground Truth - Happy)</td>
+                <td>Ground Truth - confused</td>
                 <td>
-                    <audio controls src="./emotion_demo/baseline.wav"></audio>
+                    <audio controls src="./emotion_demo/ground_truth.wav"></audio>
                 </td>
             </tr>
+        </tbody>
+    </table>
 
-            </tbody>
+    <h2>Personalized</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Audio Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Original - surprised</td>
+                <td>
+                    <audio controls src="./emotion_demo/average.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>Personalized - surprised</td>
+                <td>
+                    <audio controls src="./emotion_demo/zhang.wav"></audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Cross-Cultural</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Audio Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Indonesia - happy</td>
+                <td>
+                    <audio controls src="./emotion_demo/indonesia.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>Japan - happy</td>
+                <td>
+                    <audio controls src="./emotion_demo/japan.wav"></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>China - happy</td>
+                <td>
+                    <audio controls src="./emotion_demo/china.wav"></audio>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
 </body>
